@@ -1,0 +1,91 @@
+path{
+  stroke-dasharray:660;
+  stroke-dashoffset:660;
+  fill:none;
+  stroke:#000;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 20;
+}
+path:nth-child(1){animation:draw1 5s linear infinite}
+path:nth-child(2){animation:draw2 5s linear infinite}
+@keyframes draw1{
+  20%,100% {stroke-dashoffset:0; }
+}
+@keyframes draw2{
+  20% {stroke-dashoffset:660;}
+  40%,100% {stroke-dashoffset:0; }
+}
+
+.container {
+  max-width: 960px;
+  padding: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 38rem) {
+  padding: 16px;
+}
+
+.video {
+  max-width: 640px;
+  margin: 0 auto 1rem auto;
+}
+
+.header {
+  max-width: 640px;
+  margin: 0 auto 1rem auto;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.footer {
+  max-width: 640px;
+  margin: 0 auto 1rem auto;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+#thumbs {   
+  width: 540px;
+  margin-top:90px;
+  margin-left: auto; 
+  margin-right: auto;
+
+   text-align: justify;
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
+}
+#thumbs a {
+  vertical-align: top;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+.stretch {
+  width: 100%;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0
+}
+
+
+.youtube-container {
+  position:relative;
+  padding-bottom:56.25%;
+  height:0;
+  overflow:hidden;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, .15), 0 15px 35px 0 rgba(0, 105, 92, .5);
+}
+
+iframe, object, embed {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
